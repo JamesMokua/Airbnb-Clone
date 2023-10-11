@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { TbWorld } from "react-icons/tb";
-import { HiMiniBars3 } from "react-icons/hi2";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Search from "./Search";
+import Auth from "./Auth";
 
 const Navbar = () => {
   return (
@@ -14,6 +13,7 @@ const Navbar = () => {
           width="100"
           height="100"
           alt="logo"
+          priority={true}
         />
       </div>
       <Search />
@@ -24,20 +24,7 @@ const Navbar = () => {
         <div className="pr-3 hover:cursor-pointer">
           <TbWorld />
         </div>
-        <div className="flex flex-row items-center border mr-4 px-1 py-1 border-gray-300 rounded-full shadow-md hover:shadow-xl hover: cursor-pointer">
-          <div className="pr-3 pl-1">
-            <HiMiniBars3 />
-          </div>
-          <div className="">
-            <Avatar style={{ width: "30px", height: "30px" }}>
-              <AvatarImage
-                src="https://github.com/shadcn.png"
-                style={{ width: "30px", height: "30px" }}
-              />
-              <AvatarFallback>CN</AvatarFallback>
-            </Avatar>
-          </div>
-        </div>
+       <Auth/>
       </div>
     </div>
   );

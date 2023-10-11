@@ -20,7 +20,7 @@ const Search = () => {
     <div className="pl-28 ">
       <Menubar className="border border-gray-200 rounded-full bg-white shadow-md hover:shadow-xl hover:cursor-pointer">
         <MenubarMenu>
-          <MenubarTrigger className="cursor-pointer pl-4">
+          <MenubarTrigger className="cursor-pointer pl-4 border-r-2 border-gray-300 rounded-none h-6">
             Anywhere
           </MenubarTrigger>
           <MenubarContent>
@@ -47,7 +47,9 @@ const Search = () => {
           </MenubarContent>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="cursor-pointer">Any week</MenubarTrigger>
+          <MenubarTrigger className="cursor-pointer border-r-2 border-gray-300 rounded-none h-6">
+            Any week
+          </MenubarTrigger>
           <MenubarContent>
             <MenubarItem>
               Undo <MenubarShortcut>⌘Z</MenubarShortcut>
