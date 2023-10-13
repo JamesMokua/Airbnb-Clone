@@ -12,7 +12,7 @@ import { auth, UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 
 export default async function Auth() {
-  const { userId } = await auth();
+  const { userId }: { userId: string | null } = await auth();
   const isAuth = !!userId;
 
   return (
